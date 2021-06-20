@@ -32,6 +32,7 @@
     - [Persistent volume](#persistent-volume)
     - [Persistent Volume claim](#persistent-volume-claim)
     - [Configure pod](#configure-pod)
+  - [Reference:](#reference)
 
 ## Generic Linux commands and settings
 
@@ -719,24 +720,12 @@ spec:
           name: task-pv-storage
 ```
 
+## Reference:
 
-
-
-
-
-
-Reference:
-
-https://kubernetes.io/docs/reference/kubectl/conventions/
-https://kubernetes.io/docs/reference/kubectl/cheatsheet/
-https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands
-https://kubernetes.io/docs/tasks/
-
-https://www.youtube.com/watch?v=rnemKrveZks
-
-https://www.youtube.com/watch?v=L6K_8dOFR5w (Cloud Academy)
-
-
-https://matthewpalmer.net/kubernetes-app-developer/articles/ckad-practice-exam.html (Questions)
-
-https://thospfuller.com/2020/11/09/answers_to_five_kubernetes_ckad_practice_questions_2021/ (Answers)
+- [Cheat sheet](https://kubernetes.io/docs/reference/kubectl/cheatsheet/)
+- [K8 Commands](https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands)
+- [K8 Tasks](https://kubernetes.io/docs/tasks/)
+- [Tips on preparing for Certified Kubernetes Application Developer (CKAD)](https://www.youtube.com/watch?v=rnemKrveZks)
+- [Hands-on Tips to Pass the CKAD Exam (Cloud Academy)](https://www.youtube.com/watch?v=L6K_8dOFR5w)
+- [5 Sample Questions - CKAD](https://matthewpalmer.net/kubernetes-app-developer/articles/ckad-practice-exam.html)
+- [Answers to 5 sample questions](https://thospfuller.com/2020/11/09/answers_to_five_kubernetes_ckad_practice_questions_2021/)
