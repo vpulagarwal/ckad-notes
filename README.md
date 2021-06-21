@@ -507,6 +507,9 @@ spec:
 - `kubectl expose deployment frontend --type=NodePort --name=frontend-service --port=6262 --target-port=8080`
 - `kubectl create service clusterip my-cs --tcp=5678:8080 --dry-run -o yaml`
 
+- To access a service from temporary pod using service name (if service is running in different namespace than temporary pod).
+- `k run tmp --restart=Never --rm -i --image=nginx:alpine -- curl -m 5 <svc-name>.<namespace>:<port>`
+- `k run tmp --restart=Never --rm -i --image=nginx:alpine -- curl -m 5 <svc-name>.<namespace>.svc.cluster.local:<port>`
 
 ### Ingress
 
