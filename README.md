@@ -203,13 +203,17 @@ spec:
 - When asked for specific image or when looking of something specific try to use grep command
 - `kubhectl expose deployement my-dep --name=my-service --target-port=8080 --type=NodePort --port=80`
 - `kubectl rollout undo deployment/myapp-deployment`
-- `kubectl autoscale deployment nginx --min=5 --max=10 --cpu-percent=80`
+- `kubectl autoscale deployment nginx --min=5 --max=10 --cpu-percent=80` : Autoscale deployment
 - `kubectl rollout status deployment nginx`
 - `kubectl rollout history deployment nginx`
 - `kubectl rollout history deployment nginx --revision=1`
 - `kubectl set image deployment nginx nginx=nginx:1.17 --record`
 - `kubectl rollout undo deployment nginx  --to-revision=2` : To a specific revision
 - `k get rs nginx-67dfd6c8f9 -o yaml --show-managed-fields=false` : To avoid extra fields in yaml
+
+- `.spec.strategy.type==RollingUpdate`
+- `.spec.strategy.rollingUpdate.maxUnavailable`
+- `.spec.strategy.rollingUpdate.maxSurge`
 
 ### Jobs & Cron Jobs
 
