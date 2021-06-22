@@ -45,6 +45,7 @@
   alias kd=kubectl describe
   source <(kubectl completion bash)
   complete -F __start_kubectl k
+  alias kcs='k config set-context --namespace'
   ```
 
 - `k config set-context --namespace=<namespace> --current` : use namespace for current context
@@ -65,6 +66,8 @@
   set expandtab #Expand TABs to spaces
   set shiftwidth=2
   set tabstop=2 #tab width
+  syntax on
+  colorscheme desert
   ```
 
 - Create manifest using `cat` command
@@ -736,3 +739,4 @@ spec:
 - [Hands-on Tips to Pass the CKAD Exam (Cloud Academy)](https://www.youtube.com/watch?v=L6K_8dOFR5w)
 - [5 Sample Questions - CKAD](https://matthewpalmer.net/kubernetes-app-developer/articles/ckad-practice-exam.html)
 - [Answers to 5 sample questions](https://thospfuller.com/2020/11/09/answers_to_five_kubernetes_ckad_practice_questions_2021/)
+- [CKAD Simulator](https://killer.sh). You get access to one free simulator for 36 hours using Linux foundation single sign on. 
