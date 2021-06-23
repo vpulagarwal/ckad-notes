@@ -33,6 +33,9 @@
     - [Persistent Volume claim](#persistent-volume-claim)
     - [Configure pod](#configure-pod)
   - [Reference:](#reference)
+    - [From official Kubernetes site](#from-official-kubernetes-site)
+    - [Course and exercises to follow](#course-and-exercises-to-follow)
+    - [Tips for CKAD exams](#tips-for-ckad-exams)
 
 ## Generic Linux commands and settings
 
@@ -94,11 +97,11 @@
 
 ## Core concepts
 
-- `kubectl config set-context --current --namespace=cloud-app-gateway`
-- `k config set-context --namespace=ingress-space --current`
-
 ### Pods
 
+- `kubectl config set-context --current --namespace=cloud-app-gateway`
+- `k config set-context --namespace=ingress-space --current`
+- `kcs ingress-namespace --current` : using alias (Saves lot of time)
 - `kubectl run nginx --image=nginx`
 - `kubectl run nginx --image=nginx  --dry-run=client -o yaml`
 - `k explain pod --recursive | grep -A8 -B4 envFrom`
@@ -601,7 +604,7 @@ spec:
 ### Metrics
 
 - `k top pods -A | sort -k 4n`
-- `k top pod --no-headers -A --sort-by=cpu | awk '{print $2}' | head -1`
+- `k top pod --no-headers -A --sort-by=cpu | awk '{print $2}' | head -1` : get name of the pod with max cpu utilization.
 
 
 ### Readiness and Liveness probe
@@ -732,12 +735,21 @@ spec:
 
 ## Reference:
 
+### From official Kubernetes site
 - [Cheat sheet](https://kubernetes.io/docs/reference/kubectl/cheatsheet/)
 - [K8 Commands](https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands)
 - [K8 Tasks](https://kubernetes.io/docs/tasks/)
-- [CKAD-Exercises](https://github.com/dgkanatsios/CKAD-exercises)
-- [Tips on preparing for Certified Kubernetes Application Developer (CKAD)](https://www.youtube.com/watch?v=rnemKrveZks)
-- [Hands-on Tips to Pass the CKAD Exam (Cloud Academy)](https://www.youtube.com/watch?v=L6K_8dOFR5w)
+
+### Course and exercises to follow
+- [Udemy Course - Mumshad Mannambeth](https://www.udemy.com/course/certified-kubernetes-application-developer/)
+- [Udemy Course - Zeal Vora](https://www.udemy.com/course/mastering-certified-kubernetes-application-developer/)
+- [CKAD-Exercises](https://github.com/dgkanatsios/CKAD-exercises). 
+- [CKAD Simulator](https://killer.sh). You get access to one free simulator for 36 hours using Linux foundation single sign on. 
 - [5 Sample Questions - CKAD](https://matthewpalmer.net/kubernetes-app-developer/articles/ckad-practice-exam.html)
 - [Answers to 5 sample questions](https://thospfuller.com/2020/11/09/answers_to_five_kubernetes_ckad_practice_questions_2021/)
-- [CKAD Simulator](https://killer.sh). You get access to one free simulator for 36 hours using Linux foundation single sign on. 
+
+### Tips for CKAD exams
+- [Tips on preparing for Certified Kubernetes Application Developer (CKAD)](https://www.youtube.com/watch?v=rnemKrveZks)
+- [Hands-on Tips to Pass the CKAD Exam (Cloud Academy)](https://www.youtube.com/watch?v=L6K_8dOFR5w)
+
+
