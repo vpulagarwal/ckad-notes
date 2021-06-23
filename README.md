@@ -741,6 +741,7 @@ spec:
 - [K8 Tasks](https://kubernetes.io/docs/tasks/)
 
 ### Course and exercises to follow
+- If you are new to `vim` then use `vimtutor` to get hands dirty on `vim` editor.
 - [Udemy Course - Mumshad Mannambeth](https://www.udemy.com/course/certified-kubernetes-application-developer/)
 - [Udemy Course - Zeal Vora](https://www.udemy.com/course/mastering-certified-kubernetes-application-developer/)
 - [CKAD-Exercises](https://github.com/dgkanatsios/CKAD-exercises). 
