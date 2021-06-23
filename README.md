@@ -735,6 +735,7 @@ spec:
 - [Cheat sheet](https://kubernetes.io/docs/reference/kubectl/cheatsheet/)
 - [K8 Commands](https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands)
 - [K8 Tasks](https://kubernetes.io/docs/tasks/)
+- [CKAD-Exercises](https://github.com/dgkanatsios/CKAD-exercises)
 - [Tips on preparing for Certified Kubernetes Application Developer (CKAD)](https://www.youtube.com/watch?v=rnemKrveZks)
 - [Hands-on Tips to Pass the CKAD Exam (Cloud Academy)](https://www.youtube.com/watch?v=L6K_8dOFR5w)
 - [5 Sample Questions - CKAD](https://matthewpalmer.net/kubernetes-app-developer/articles/ckad-practice-exam.html)
