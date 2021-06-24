@@ -42,8 +42,10 @@
 ## Aliases and settings
 
 - `wc -l <filename>` prints the line count
+- `k config set-context --current --namespace <namespace>` : use namespace for current context
+  
 - Alias and autocomplete
-
+  
   ```sh
   alias k=kubectl
   alias kx=kubectl explain
@@ -55,7 +57,6 @@
   alias kns='kubectl config set-context --current --namespace' # example: kns <mynamspace>
   ```
 
-- `k config set-context --namespace=<namespace> --current` : use namespace for current context
 - Another way of configuring alias
   ```sh
   export NS=default
