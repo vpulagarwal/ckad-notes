@@ -5,7 +5,7 @@
 > Curriculum of CKAD is changing from Q3. [Details here](https://github.com/cncf/curriculum/blob/master/CKAD-2021_Curriculum_Coming_Q3_2021.pdf)
 
 - [CKAD Notes and Imperative Commands](#ckad-notes-and-imperative-commands)
-  - [Generic Linux commands and settings](#generic-linux-commands-and-settings)
+  - [Aliases and settings](#aliases-and-settings)
   - [Core concepts](#core-concepts)
     - [Pods](#pods)
     - [Resources](#resources)
@@ -39,7 +39,7 @@
     - [Course and exercises to follow](#course-and-exercises-to-follow)
     - [Tips for CKAD exams](#tips-for-ckad-exams)
 
-## Generic Linux commands and settings
+## Aliases and settings
 
 - `wc -l <filename>` prints the line count
 - Alias and autocomplete
