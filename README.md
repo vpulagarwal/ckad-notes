@@ -51,6 +51,8 @@
   source <(kubectl completion bash)
   complete -F __start_kubectl k
   alias kcs='k config set-context --namespace'
+  # Even better alias:
+  alias kns='kubectl config set-context --current --namespace' # example: kns <mynamspace>
   ```
 
 - `k config set-context --namespace=<namespace> --current` : use namespace for current context
